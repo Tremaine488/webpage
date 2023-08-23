@@ -1,0 +1,355 @@
+
+
+<doctype html>
+<html lang="en">
+<head>
+  <meta charset=“uf-8” />
+  <meta name="viewport" content="width=devise=width"
+  initial-scale="1.0">
+  <title>Beautiful and simple website using html</title>
+  <link rel="stylesheet" href="style.css">
+<head>
+<body background="../image/background.JPG"  link="#000" alink="#017bf5" vlinl="#000">
+      </body>
+
+    <header>
+      <h2 class="logo">logo</h2>
+      <nav class="navigation">
+        <a href="#">HOME</a>  
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CONTACT</a>
+        <button class="btnlogin-popup">login</button>
+    </nav>
+    </header>
+  </head>
+
+    <div class="wrapper">
+      <ul>
+        <li>
+      <div class="form-box login">
+        <h2>login</h2>
+        <form action="#">
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" required>
+            <label>Email</label>
+       </div>
+       <div class="input-box">
+        <span class="icon">
+          <ion-icon name="lock-closed"></ion-icon>
+        </span>
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+       <div class="remember-forgot">
+        <label><input type="checkbox">
+           Remember-me</label>
+           <a href="#">Forgot Password?</a>
+       </div>
+       <button type="submit" class="btn">Login</button>
+       <div class="Login-register">
+        <p>dont have an account?
+          <a href="#"
+           register-link>Register </a></p>
+        </li>
+        <ul>
+           </div>
+       </div>
+       </div>
+       </ul>
+      </form>
+      </div>
+    </div>
+
+ <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="text" required>
+            <label>username</label>
+       </div>
+        <form action="#">
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" required>
+            <label>email</label>
+       </div>
+
+       <div class="input-box">
+        <span class="icon">
+          <ion-icon name="lock-closed"></ion-icon>
+        </span>
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+       <div class="remember-forgot">
+        <label><input type="checkbox">
+           I agree to the terms & conditions</label>
+       </div>
+       <button type="submit" class="btn">Register</button>
+       <div class="Login-register">
+        <p>Already have an account?
+          <a href="#"
+           login-link>login</a></p>
+        </li>
+        <ul>
+           </div>
+       </div>
+       </div>
+       </ul>
+      </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+  
+  </body>
+
+</head>
+
+ </div>
+           </div>
+           </div>
+           </ul>
+          </form>
+          </div>
+        </div>
+
+
+
+</div>
+         </div>
+         </div>
+         </ul>
+        </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+CSS PROGRAM
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: border-box;
+
+ }
+
+ .body {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+ header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+ }
+ 
+.wrapper {
+   
+    color: #fff;
+    padding: 30px 450px;
+    padding-bottom: 70px;
+    padding-top: 300px;
+    
+
+}
+
+
+ .logo {
+    font-size: 2cm;
+    color: #fff;
+    user-select: none;
+ }
+
+ .navigation a {
+    position: relative;
+    font-size: 0.6cm;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 150;
+    margin-left: 40px;
+ }
+
+ .navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+ }
+
+ .navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+ }
+
+  
+ .navigation .btnlogin-popup {
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.6cm;
+    color: #fff;
+    font-weight: 150;
+    margin-left: 30px;
+    transition: 5s;
+ }
+
+ 
+ .navigation .btnlogin-popup:hover {
+    background: #fff;
+    color: #162938;
+ }
+
+ .wrapper ul li {
+    position: relative;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    width: 500px;
+    height: 400px;
+    border-right: 50%;
+    align-items: center;
+    padding: 20px 30px;
+    padding-right: 0;
+    padding-left: 0;
+    justify-content: center;
+    display: flex;
+ }
+
+ .wrapper form-box {
+    width: 100%;
+    padding: 40px;
+ }
+
+ .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+ }
+
+ .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 0.6cm;
+    color: #fff;
+    font-weight: 200;
+    pointer-events: none;
+    transition: .5s;
+ }
+
+ .input-box input:focus~label,
+ .input-box input:valid~label {
+    top: -5px;
+ }
+
+
+ .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.4cm;
+    color: #fff;
+    font-weight: 100;
+    padding: 0 35px 0 5px;
+ }
+
+ .input-box  .ion-icon {
+    position: absolute;
+    right: 8px;
+    font-size: 0.6cm;
+    color: #fff;
+ }
+
+ .remember-forgot {
+    font-size: 0.4cm;
+    color: #fff;
+    font-weight: 100;
+    margin: 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+ }
+.btn {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+.login-register p a {
+    color: red;
+}
+
+.remember-forgot  a {
+    color: red;
+}
+
+
+
+
+JAVASCRIPT PROGRAMME
+
+const Wrapper = document.querySelector('.wrapper');
+const login = document.querySelector('.login-link');
+const regsterlink = document.querySelector('.register-link');
+const btnpopup = document.querySelector('.btnlogin-popup');
+
+
+registerlink.addEventlistener('click', ()=> {wrapper.classlist.add('active');});
+
+loginlink.addEventlistener('click', ()=> {wrapper.classlist.remove('active');});
+
+btnpopup.addEventlistener('click', ()=> {wrapper.classlist.remove('active popup');});
+
+
+
+
+
+
+
+
